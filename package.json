@@ -4,11 +4,12 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
+    "build": "prisma generate && next build",
     "start": "next start",
     "lint": "next lint"
   },
   "dependencies": {
+    "@prisma/client": "5.2.0",
     "@types/node": "20.5.3",
     "@types/react": "18.2.21",
     "@types/react-dom": "18.2.7",
@@ -17,6 +18,10 @@
     "next": "13.4.19",
     "react": "18.2.0",
     "react-dom": "18.2.0",
+    "todomvc-app-css": "2.4.2",
     "typescript": "5.1.6"
+  },
+  "devDependencies": {
+    "prisma": "5.2.0"
   }
 }
